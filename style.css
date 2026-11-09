@@ -1,0 +1,76 @@
+/* Basic page styles */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  background-color: #f4f6f8;
+  color: #222222;
+}
+
+header {
+  background-color: #1f3a5f;
+  padding: 20px 40px;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0 0 15px 0;
+}
+
+main {
+  padding: 40px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* Horizontal nav: remove bullets and put items side by side */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav > ul {
+  display: flex;
+}
+
+nav a {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+nav a:hover {
+  background-color: #2f5d94;
+}
+
+/* The parent li is the "anchor" for the drop down */
+nav li {
+  position: relative;
+}
+
+/* The drop down is placed right under its parent li */
+.dropdown {
+  display: none;            /* hidden by default */
+  position: absolute;
+  top: 100%;                /* just below the parent */
+  left: 0;
+  background-color: #1f3a5f;
+  min-width: 160px;
+}
+
+/* Show the drop down when hovering over the parent li */
+li:hover .dropdown {
+  display: block;
+}
+
+/* Drop down items stack vertically */
+.dropdown li a {
+  padding: 10px 20px;
+}
